@@ -1,0 +1,17 @@
+1).
+globally —- This drops modules in {prefix}/lib/node_modules,
+and puts executable files in {prefix}/bin, where {prefix}
+is usually something like /usr/local. It also installs man
+pages in {prefix}/share/man, if they’re supplied.
+
+
+
+locally —- This installs your package in the current working
+directory. Node modules go in ./node_modules, executables go
+in ./node_modules/.bin/, and man pages aren’t installed at 
+all.
+
+
+2).The difference between these two, is that devDependencies
+are modules which are onlyrequired during development, while
+dependencies are modules which are also required at runtime.
